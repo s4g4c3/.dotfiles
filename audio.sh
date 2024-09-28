@@ -13,3 +13,6 @@ audio_pkg=(
 for pkg in "${audio_pkg[@]}"; do
   sudo pacman -S "$pkg"
 done
+
+systemctl --user enable pipewire.service wireplumber.service pipewire-pulse.service
+systemctl --user start pipewire.service wireplumber.service pipewire-pulse.service
