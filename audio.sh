@@ -1,9 +1,11 @@
 #!/bin/bash
 
 audio_pkg=(
-  bluez 
-  blueman 
-  blueman-utils 
+  pavucontrol
+  pipewire 
+  pipewire-pulse 
+  pipewire-alsa 
+  pipewire-jack
 )
 
 for pkg in "${audio_pkg[@]}"; do
