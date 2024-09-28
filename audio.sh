@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Rns pulseaudio pipewire alsa-utils
+
 audio_pkg=(
   pavucontrol
   pipewire 
