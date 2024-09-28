@@ -1,6 +1,7 @@
 #!/bin/bash
 
 nvidia_pkg=(
+  linux-headers
   nvidia-dkms
   nvidia-settings
   nvidia-utils
