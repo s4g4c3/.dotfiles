@@ -7,11 +7,11 @@ audio_pkg=(
   pipewire 
   pipewire-pulse 
   pipewire-alsa 
-  pipewire-jack
+  #pipewire-jack
 )
 
 for pkg in "${audio_pkg[@]}"; do
-  sudo pacman -S "$pkg"
+  sudo pacman -S "$pkg" --noconfirm
 done
 
 systemctl --user enable pipewire.service wireplumber.service pipewire-pulse.service
