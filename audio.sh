@@ -11,5 +11,5 @@ audio_pkg=(
 )
 
 for pkg in "${audio_pkg[@]}"; do
-  sudo pacman -S "$pkg" --noconfirm
+  sudo pacman -S "$pkg"
 done
