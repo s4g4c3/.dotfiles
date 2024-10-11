@@ -4,9 +4,9 @@ sudo pacman -Rns pulseaudio pipewire alsa-utils
 
 audio_pkg=(
   pavucontrol
-  pipewire 
-  pipewire-pulse 
-  pipewire-alsa 
+  pipewire
+  pipewire-pulse
+  pipewire-alsa
   #pipewire-jack
 )
 
